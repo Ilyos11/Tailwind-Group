@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Group</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-3 bg-white border-b border-gray-100 md:px-8">
+  
+  <div class="flex items-center flex-1 gap-8">
+    
+    <a href="#" class="flex-shrink-0">
+      <img src="./img/Logo Vector.png" alt="Logo" class="h-8 w-auto">
+    </a>
+
+    <div class="hidden md:relative md:block w-full max-w-md">
+      <input 
+        type="text" 
+        placeholder="Search bar" 
+        class="w-full py-2 pl-4 pr-10 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition-all"
+      >
+      <div class="absolute right-3 top-2.5 text-gray-400">
+        <svg xmlns="http://w3.org" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-6">
+    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-700">
+      <button class="flex items-center gap-1 hover:text-pink-600 transition-colors">
+        Category
+        <svg xmlns="http://w3.org" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <a href="#" class="hover:text-pink-600 transition-colors">Become an Mentor</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button class="px-5 py-2 text-sm font-semibold text-slate-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-all">
+        Login
+      </button>
+      <button class="px-5 py-2 text-sm font-semibold text-white bg-pink-500 rounded-lg hover:bg-pink-600 shadow-md shadow-pink-200 transition-all">
+        Sign Up
+      </button>
+    </div>
+  </div>
+</header>
+  
+
+<!-- Section 2 -->
+<section class="min-h-screen bg-[#000814] text-white flex items-center px-6 py-12 md:px-16 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    
+    <div class="space-y-8">
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+        Find the Best <br> Courses and <br> <span class="text-white">Amazing Mentor</span>
+      </h1>
+      
+      <p class="text-gray-400 text-lg max-w-lg">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
+      </p>
+
+    
+      <div class="relative max-w-xl group">
+        <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+        <input type="text" placeholder="Type in the course you want to learn" 
+               class="w-full py-4 pl-12 pr-32 bg-white text-gray-900 rounded-xl focus:outline-none shadow-lg">
+        <button class="absolute right-2 top-2 bottom-2 px-8 bg-[#ff2d75] hover:bg-[#e62568] transition-colors rounded-lg font-semibold">
+          Search
+        </button>
+      </div>
+
+      
+      <div class="flex flex-wrap gap-6 text-sm font-medium">
+        <div class="flex items-center gap-2">
+           <img src="./img/clock icon.png" class="w-5 h-5" alt=""> <span>Life Time Acces</span>
+        </div>
+        <div class="flex items-center gap-2">
+           <img src="./img/user icon.png" class="w-5 h-5" alt=""> <span>Expert Mentor</span>
+        </div>
+        <div class="flex items-center gap-2">
+           <img src="./img/video library icon.png" class="w-5 h-5" alt=""> <span>100K+ Courses</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="relative flex justify-center lg:justify-end">
+      
+      <div class="relative w-full max-w-[450px] aspect-[4/5] bg-gray-200 rounded-3xl overflow-visible shadow-2xl">
+        <img src="your-main-image.jpg" class="w-full h-full object-cover rounded-3xl" alt="Mentor">
+
+        
+        <div class="absolute -top-6 -left-6 w-14 h-14 bg-blue-500 p-3 rounded-2xl shadow-xl animate-bounce" style="animation-duration: 3s">
+          <img src="icon-bell.png" alt="">
+        </div>
+        
+        <div class="absolute top-1/2 -right-8 w-14 h-14 bg-[#ff2d75] p-3 rounded-2xl shadow-xl animate-pulse">
+          <img src="icon-check.png" alt="">
+        </div>
+
+        <div class="absolute bottom-20 -left-10 w-14 h-14 bg-[#001d3d] p-3 rounded-2xl shadow-xl">
+          <img src="icon-heart.png" alt="">
+        </div>
+
+      
+        <div class="absolute bottom-8 right-8 bg-white p-4 rounded-2xl shadow-2xl text-gray-900 text-center">
+          <p class="text-2xl font-bold">500+</p>
+          <p class="text-xs text-gray-500 mb-2">Total Review</p>
+          <div class="flex gap-1 justify-center text-yellow-400">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="absolute -z-10 w-64 h-64 bg-pink-600/20 blur-[100px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Section 3 -->
+<section class="py-16 px-4 max-w-7xl mx-auto font-sans bg-white text-slate-900">
+  
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Trending Courses</h2>
+
+  
+  <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 text-sm font-semibold text-gray-400">
+    <button class="px-8 py-2 bg-[#ff2d75] text-white rounded-md shadow-lg shadow-pink-200">All</button>
+    <button class="hover:text-[#ff2d75] transition-colors">Business</button>
+    <button class="hover:text-[#ff2d75] transition-colors">Art & Design</button>
+    <button class="hover:text-[#ff2d75] transition-colors">Development</button>
+    <button class="hover:text-[#ff2d75] transition-colors">Marketing</button>
+  </div>
+
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+    
+    
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+       
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">UI/UX Design</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">Interpersonal Skills - Work Better With Others!</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$384</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+        
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">Web Developer</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">How To Become An Expert Web Developer</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$735</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+        
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">UX Research</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">User Experience Design Essentials</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$826</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+       
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">3D Design</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">Creating 3D Modelling In Blender</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$710</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+        
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">Public Speaking</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">Interpersonal Skills - Work Better With Others!</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$384</span>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+       
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">UI/UX Design</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">How To Become An Expert Web Developer</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$758</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+        
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">3D Design</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">Creating 3D Modelling In Blender</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$973</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="group cursor-pointer">
+      <div class="relative aspect-square bg-gray-200 rounded-2xl mb-4 overflow-hidden shadow-sm group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2">
+        
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 py-1.5 bg-[#4a90e2] text-white text-[10px] text-center rounded-t-lg font-bold uppercase">UI/UX Design</div>
+      </div>
+      <div class="px-1 space-y-1.5">
+        <h3 class="font-bold text-[15px] leading-tight group-hover:text-[#ff2d75] transition-colors">Interpersonal Skills - Work Better With Others!</h3>
+        <p class="text-[11px] text-[#ff2d75] font-semibold">Tanah Air Team</p>
+        <div class="flex items-center gap-1 text-yellow-400 text-[10px]">★★★★★ <span class="text-gray-400 font-normal">(2078)</span></div>
+        <div class="flex items-baseline gap-2 pt-1">
+          <span class="text-gray-300 line-through text-xs font-medium">$640</span>
+          <span class="text-lg font-extrabold">$273</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-16 text-center">
+    <button class="px-12 py-3.5 bg-[#ff2d75] text-white font-bold rounded-lg hover:bg-[#e62568] transition-all shadow-lg shadow-pink-100">
+      More Courses
+    </button>
+  </div>
+</section>
+
+
+
+<!-- Section 4 -->
+<section class="py-16 px-4 max-w-7xl mx-auto font-sans">
+  
+  <h2 class="text-3xl font-bold text-[#001d3d] mb-10 text-left">Top Categories</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+      
+      <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
+      
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Art & Design</span>
+      </div>
+    </div>
+
+   
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+     
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Business</span>
+      </div>
+    </div>
+
+    
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+     
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Copy Writing</span>
+      </div>
+    </div>
+
+  
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+      
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Marketing</span>
+      </div>
+    </div>
+
+    
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+      
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Programming</span>
+      </div>
+    </div>
+
+
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+      
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Photography</span>
+      </div>
+    </div>
+
+    
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+     
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center">Videography</span>
+      </div>
+    </div>
+
+    
+    <div class="group relative aspect-[3/4] bg-gray-600 rounded-2xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl transition-all">
+      
+      <div class="absolute inset-0 bg-black/30"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <span class="text-white text-xl font-bold text-center px-4">Personal Development</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Section 5 -->
+<section class="relative py-20 px-4 max-w-7xl mx-auto font-sans overflow-hidden">
+  
+  
+  <div class="absolute top-10 right-0 w-32 md:w-48 opacity-80 pointer-events-none">
+    <img src="./img/yellow picture.png" alt="" class="w-full h-auto">
+  </div>
+
+  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-32 text-center">
+    
+    <div class="space-y-3">
+      <div class="flex justify-center">
+        <img src="./img/video_library.png" class="h-10 w-10 object-contain" alt="">
+      </div>
+      <p class="text-2xl md:text-3xl font-extrabold text-slate-900">10.000+</p>
+      <p class="text-gray-500 font-medium">Courses</p>
+    </div>
+
+    
+    <div class="space-y-3">
+      <div class="flex justify-center">
+        <img src="./img/icons people.png" class="h-10 w-10 object-contain" alt="">
+      </div>
+      <p class="text-2xl md:text-3xl font-extrabold text-slate-900">50.000+</p>
+      <p class="text-gray-500 font-medium">Active Students</p>
+    </div>
+
+    
+    <div class="space-y-3">
+      <div class="flex justify-center">
+        <img src="./img/circle icon.png" class="h-10 w-10 object-contain" alt="">
+      </div>
+      <p class="text-2xl md:text-3xl font-extrabold text-slate-900">1000+</p>
+      <p class="text-gray-500 font-medium">Active Mentor</p>
+    </div>
+
+    
+    <div class="space-y-3">
+      <div class="flex justify-center">
+        <img src="./img/flag.png" class="h-10 w-10 object-contain" alt="">
+      </div>
+      <p class="text-2xl md:text-3xl font-extrabold text-slate-900">180</p>
+      <p class="text-gray-500 font-medium">Countries</p>
+    </div>
+  </div>
+
+  
+  <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+    
+    <div class="w-full lg:w-1/2">
+      <div class="aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-sm">
+        
+      </div>
+    </div>
+
+    
+    <div class="w-full lg:w-1/2 space-y-6">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900">Become an Mentor</h2>
+      
+      <div class="space-y-4 text-gray-400 leading-relaxed">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+        </p>
+      </div>
+
+      <button class="mt-4 px-8 py-3 bg-[#ff2d75] text-white font-bold rounded-lg hover:bg-[#e62568] transition-all shadow-lg shadow-pink-100">
+        Start Teaching
+      </button>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Section 6 -->
+<section class="py-20 px-4 max-w-6xl mx-auto relative group">
+  
+  
+  <button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-gray-400 hover:text-pink-500 transition-colors hidden md:flex">
+    <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+  </button>
+
+  <button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center text-gray-400 hover:text-pink-500 transition-colors hidden md:flex">
+    <svg xmlns="http://w3.org" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </button>
+
+
+  <div class="flex flex-col md:flex-row items-center gap-12 md:px-16">
+    
+    
+    <div class="relative flex-shrink-0 w-full max-w-[350px]">
+      
+      <div class="aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-sm">
+        
+      </div>
+      
+      
+      <div class="absolute -bottom-6 -left-6 w-32 h-32 overflow-hidden pointer-events-none">
+        
+        <div class="w-full h-full rounded-full bg-white flex items-center justify-center shadow-lg border border-gray-50">
+           <img src="./img/Accent white.png" class="w-full h-full object-cover" alt="">
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="flex-1 space-y-6">
+      <blockquote class="text-xl md:text-3xl font-medium text-slate-800 leading-relaxed italic md:not-italic">
+        "After studying here I gained new knowledge and insights. The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!"
+      </blockquote>
+      
+      <div class="space-y-1">
+        <p class="text-xl font-bold text-[#001d3d]">KecekArif</p>
+        <p class="text-sm text-gray-400 font-medium">Yang punya Surabaya nanti kapan - kapan tapi</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Section 7 -->
+<section class="py-20 px-4 max-w-6xl mx-auto text-center">
+  
+  <h2 class="text-3xl font-bold text-[#001d3d] mb-12">Trusted by Company</h2>
+
+  <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-20">
+    
+    <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+      <img src="./img/1 Logo.png" alt="Studio" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+
+    
+    <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+      <img src="./img/2 Logo.png" alt="Logoipsum" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+
+    
+    <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+      <img src="./img/3 Logo.png" alt="Logoipsum" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+
+    <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+      <img src="./img/4 Logo.png" alt="Studio" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+    </div>
+
+    
+    <div class="w-full flex justify-center gap-12 md:gap-20 mt-4">
+      <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+        <img src="./img/5 Logo.png" alt="Logoipsum" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="w-32 md:w-40 opacity-60 hover:opacity-100 transition-opacity duration-300">
+        <img src="./img/6 Logo.png" alt="Logoipsum" class="w-full h-auto grayscale hover:grayscale-0 transition-all">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Section 8 -->
+<section class="py-20 px-4 max-w-7xl mx-auto font-sans bg-white">
+  
+  <h2 class="text-3xl md:text-4xl font-bold text-[#001d3d] mb-12 text-left">The Latest Blog</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    
+    <div class="group cursor-pointer">
+      <div class="aspect-video bg-gray-200 rounded-2xl mb-6 overflow-hidden shadow-sm transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+        
+      </div>
+      <div class="space-y-3">
+        <div class="flex gap-4 text-xs text-gray-400 font-medium">
+          <span>1, Mei 2021</span>
+          <span>•</span>
+          <span>3 min read</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#001d3d] leading-tight group-hover:text-[#ff2d75] transition-colors">
+          10 graphic design trends to get you inspired in 2021
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed line-clamp-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+        <a href="#" class="inline-block text-sm font-bold text-[#ff2d75] hover:underline">Read More</a>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="aspect-video bg-gray-200 rounded-2xl mb-6 overflow-hidden shadow-xl transition-all group-hover:-translate-y-1">
+        
+      </div>
+      <div class="space-y-3">
+        <div class="flex gap-4 text-xs text-gray-400 font-medium">
+          <span>3, Mei 2021</span>
+          <span>•</span>
+          <span>3 min read</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#001d3d] leading-tight group-hover:text-[#ff2d75] transition-colors">
+          Right Triangle Trigonometry Explained
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed line-clamp-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+        <a href="#" class="inline-block text-sm font-bold text-[#ff2d75] hover:underline">Read More</a>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="aspect-video bg-gray-200 rounded-2xl mb-6 overflow-hidden shadow-sm transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+        
+      </div>
+      <div class="space-y-3">
+        <div class="flex gap-4 text-xs text-gray-400 font-medium">
+          <span>3, Mei 2021</span>
+          <span>•</span>
+          <span>3 min read</span>
+        </div>
+        <h3 class="text-xl font-bold text-[#001d3d] leading-tight group-hover:text-[#ff2d75] transition-colors">
+          2 Reasons Why You're Confusing Chemistry
+        </h3>
+        <p class="text-sm text-gray-500 leading-relaxed line-clamp-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+        </p>
+        <a href="#" class="inline-block text-sm font-bold text-[#ff2d75] hover:underline">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Footer-->
+<footer class="bg-[#000d1a] text-white py-16 px-6 md:px-16 font-sans">
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+      
+      <div class="space-y-6">
+        <img src="./img/Logo footer.png" alt="Logo" class="h-8 w-auto">
+        <p class="text-gray-400 text-sm leading-relaxed max-w-xs">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+        <h4 class="text-lg font-bold">About</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#" class="hover:text-pink-500 transition-colors">About us</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Courses</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Mentor</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-6">
+        <h4 class="text-lg font-bold">Support</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Careers</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Help & Support</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-6">
+        <h4 class="text-lg font-bold">Company</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-pink-500 transition-colors">Code of Conduct</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 gap-6">
+      <div class="flex gap-8 text-xs text-gray-500">
+        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white transition-colors">Terms and Condition</a>
+      </div>
+      <p class="text-xs text-gray-500">
+        @2020 TanahAir Studio. All rights reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
